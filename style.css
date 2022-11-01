@@ -1,224 +1,261 @@
-*{
-    margin: 0%;
-    padding: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap");
 
+* {
+  margin: 0%;
+  padding: 0%;
 }
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
-.navbar{
-    /* border-bottom: 1px solid white; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* background-color: rgba(24, 22, 22,0.5); */
-    color: blanchedalmond;
+html {
+  font-size: 62.2%;
 }
-.navbar img{
-   
-    width: 40px;
-    padding: 5px;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  color: blanchedalmond;
 }
-.logo{
+.navbar img {
+  width: 4rem;
+  padding: 5px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbar p {
+  margin-right: 4rem;
+  font-size: 2rem;
+}
+.navbar ul {
+  width: 50vw;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1px;
+}
+.heading {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  color: white;
+}
+.heading h1 {
+  font-size: 6rem;
+  padding: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 3px black;
+  text-align: center;
+}
+.heading p {
+  text-align: center;
+  width: 70%;
+  font-size: 1.8rem;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.work {
+  width: 28%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+.mywork {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 0%;
+}
+.work h2 {
+  font-size: 3rem;
+  padding: 1rem;
+  letter-spacing: 1.5px;
+}
+.work p {
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+#btn {
+  font-family: inherit;
+  padding: 0.5rem 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondHead {
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  padding: 10px;
+}
+.aboutus {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("bg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+.aboutus h1 {
+  color: whitesmoke;
+  margin: 1.5rem;
+  padding: 1rem;
+  font-size: 4rem;
+  border-bottom: 3px solid white;
+  border-radius: 8px;
+  text-shadow: 2px 1px 1px black;
+  letter-spacing: 1px;
+}
+.aboutus p {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  width: 50%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.contactus {
+  width: 100vw;
+  height: 70vh;
+  background: rgb(236, 226, 226);
+}
+form {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+form h1 {
+  padding: 1.5rem;
+  font-size: 4rem;
+}
+form input {
+  width: 40rem;
+  padding: 1rem 0.8rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 0.8rem;
+}
+#submit {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: burlywood;
+  }
+  .work {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .mywork {
+    height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
 }
-.navbar p{
-    margin-right: 40px;
-    font-size: 3vmin;
-   
+.image_wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("bg07.jpg");
+  background-position: center;
+  background-size: cover;
 }
-.navbar ul{
-    width: 50vw;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.logo_design {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("img01.jpg");
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
 }
-ul li{
-    list-style: none;
-
+.bis_card {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("img02.jpg");
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
 }
-ul li a{
-    text-decoration: none;
-    font-size: 2.8vmin;
-    color: white;
-    letter-spacing: 1px;
+.ban_design {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("img03.jpg");
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
 }
-.heading{
-    width: 100vw;
-    height: 70vh;
-    display: flex;
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .aboutus>p{
+    width: 90%;
+  }
+  .navbar{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid black;
-    color: white;
-}
-.heading h1{
-    font-size: 7vmin;
-    padding: 15px;
-    letter-spacing: 2px;
-    text-shadow: 1px 2px 3px black;
-}
-.heading p{
-    text-align: center;
+  }
+  .navbar ul{
+    width: 80%;
+  }
+  .work{
     width: 70%;
-    font-size: 2.5vmin;
-    padding: 10px;
-    letter-spacing: 1px;
-}
-.work{
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid black;
-}
-.mywork{
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.work h2{
-    font-size: 4vmin;
-    padding: 10px;
-    letter-spacing: 1.5px;
-}
-.work p{
-    font-size: 2.3vmin;
-    padding: 10px;
-    letter-spacing: 1px;
-}
-#btn{
-    padding: 4px 8px;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
+  }
 }
 
-.secondHead{
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    border-bottom: 3px solid gray;
-    padding: 10px;
-}
-.aboutus{
-    width: 100%;
-    height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("bg.jpg");
-    background-position: bottom;
-    background-size: cover;
-    color: aliceblue;
-    display: flex;
-
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-.aboutus h1{
-    color: whitesmoke;
-    margin: 15px;
-    padding: 10px;
-    font-size: 5vmin;
-    border-bottom: 3px solid white;
-    border-radius: 8px;
-    text-shadow: 2px 1px 1px black;
-    letter-spacing: 1px;
-}
-.aboutus p{
-    font-size: 2.3vmin;
-    color: whitesmoke;
-    width: 40%;
-    text-align: center;
-    letter-spacing: 2px;
-
-}
-.contactus{
-    width: 100vw;
-    height: 70vh;
-    background: rgb(236, 226, 226);
-}
-form{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-   
-}
-form h1{
-    padding: 15px;
-    font-size: 5vmin;
-}
-form input{
-    width: 20%;
-    padding: 8px;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-#submit{
-    padding: 5px 11px;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-}
-@media only screen and (max-width:980px) {
-    body{
-        background-color: burlywood;
+@media only screen and (max-width: 450px) {
+    html {
+      font-size: 35%;
     }
-    .work{
-        width: 100%;
-    }
-    .mywork{
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-.image_wrapper{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("bg07.jpg");
-    background-position: center;
-    background-size: cover;
-    
-}
-.logo_design{
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("img01.jpg");
-    background-position: center;
-    background-size: cover;
-    color: aliceblue;
-
-}
-.bis_card{
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("img02.jpg");
-    background-position: center;
-    background-size: cover;
-    color: aliceblue;
-}
-.ban_design{
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("img03.jpg");
-    background-position: center;
-    background-size: cover;
-    color: aliceblue;
-}
+  }
